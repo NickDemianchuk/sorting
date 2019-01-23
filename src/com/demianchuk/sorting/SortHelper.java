@@ -5,10 +5,9 @@ public class SortHelper {
     }
 
     protected static void swap(int[] arr, int i, int j) {
-        // swapping without a temp variable
-        arr[i] += arr[j];
-        arr[j] = arr[i] - arr[j];
-        arr[i] -= arr[j];
+        int temp = arr[j];
+        arr[j] = arr[i];
+        arr[i] = arr[j];
     }
 
     protected static void print(int[] arr) {
